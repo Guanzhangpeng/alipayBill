@@ -790,11 +790,6 @@ typedef NS_ENUM(NSInteger,ScrollViewTagValue) {
         [self.delegate datePicker:self didSelectedDate:[self getDate]];
     }
 }
-- (void)selectedDate{
-    if ([self.delegate respondsToSelector:@selector(datePicker:didSelectedDate:)]) {
-        [self.delegate datePicker:self didSelectedDate:[self getDate]];
-    }
-}
 
 #pragma mark - Show and Dismiss
 

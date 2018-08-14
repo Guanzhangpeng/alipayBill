@@ -63,7 +63,6 @@ typedef NS_ENUM(NSInteger,HooDatePickerMode) {
 
 - (instancetype)initWithSuperView:(UIView*)superView;
 
-
 - (instancetype)initDatePickerMode:(HooDatePickerMode)datePickerMode andAddToSuperView:(UIView *)superView;
 
 - (instancetype)initDatePickerMode:(HooDatePickerMode)datePickerMode minDate:(NSDate *)minimumDate maxMamDate:(NSDate *)maximumDate  andAddToSuperView:(UIView *)superView;
@@ -73,8 +72,6 @@ typedef NS_ENUM(NSInteger,HooDatePickerMode) {
 - (void)setTintColor:(UIColor *)tintColor;
 
 - (void)setHighlightColor:(UIColor *)highlightColor;
-
-- (void)selectedDate;
 
 - (void)show;
 
