@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DatePickVC">
+            <connections>
+                <outlet property="btn_enTime" destination="0xE-6K-XCG" id="CUy-h1-PRR"/>
+                <outlet property="btn_selectMonth" destination="a9U-Ku-GH8" id="pdq-8t-kgS"/>
+                <outlet property="btn_startTime" destination="xAA-ch-RRc" id="JST-hw-hWu"/>
+                <outlet property="dayView" destination="2Sv-gE-MYk" id="bs5-2w-JZH"/>
+                <outlet property="monthView" destination="ZPG-9X-wmb" id="8EI-Us-ofe"/>
+                <outlet property="removeBtn" destination="E5u-6T-HDJ" id="hw7-YM-5al"/>
+                <outlet property="selTypeBtn" destination="MW0-qx-clp" id="hDB-0y-7dD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MW0-qx-clp">
+                    <rect key="frame" x="20" y="50" width="58" height="25"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="rCb-lz-SgM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <state key="normal" title="按月选择">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="selTypeBtn_Click:" destination="-1" eventType="touchUpInside" id="EZ9-TC-jlA"/>
+                    </connections>
+                </button>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Sv-gE-MYk" userLabel="dayView">
+                    <rect key="frame" x="0.0" y="100" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAA-ch-RRc" customClass="timeButton">
+                            <rect key="frame" x="20" y="0.0" width="137.5" height="50"/>
+                            <state key="normal" title="开始时间" image="line_Normal">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <state key="selected" image="line_Selected">
+                                <color key="titleColor" red="0.078431372549019607" green="0.47058823529411764" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="selectTime_btnClick:" destination="-1" eventType="touchUpInside" id="cHg-kD-b8y"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="至" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOr-od-e50">
+                            <rect key="frame" x="177" y="0.0" width="20" height="47"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="vMF-eO-vZN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xE-6K-XCG" customClass="timeButton">
+                            <rect key="frame" x="217" y="0.0" width="138" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="结束时间" image="line_Normal">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <state key="selected" image="line_Selected">
+                                <color key="titleColor" red="0.078431372550000003" green="0.47058823529999999" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="selectTime_btnClick:" destination="-1" eventType="touchUpInside" id="KBF-p2-13p"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="0xE-6K-XCG" firstAttribute="top" secondItem="2Sv-gE-MYk" secondAttribute="top" id="0jd-m2-5ah"/>
+                        <constraint firstItem="VOr-od-e50" firstAttribute="leading" secondItem="xAA-ch-RRc" secondAttribute="trailing" constant="20" id="64M-Lm-eQZ"/>
+                        <constraint firstAttribute="trailing" secondItem="0xE-6K-XCG" secondAttribute="trailing" constant="20" id="7qu-OJ-Saf"/>
+                        <constraint firstItem="VOr-od-e50" firstAttribute="top" secondItem="2Sv-gE-MYk" secondAttribute="top" id="EDi-58-xNb"/>
+                        <constraint firstItem="xAA-ch-RRc" firstAttribute="top" secondItem="2Sv-gE-MYk" secondAttribute="top" id="JBg-kJ-kxb"/>
+                        <constraint firstAttribute="bottom" secondItem="0xE-6K-XCG" secondAttribute="bottom" id="P7R-AG-6uq"/>
+                        <constraint firstItem="xAA-ch-RRc" firstAttribute="leading" secondItem="2Sv-gE-MYk" secondAttribute="leading" constant="20" id="WAv-45-4hQ"/>
+                        <constraint firstItem="VOr-od-e50" firstAttribute="centerX" secondItem="2Sv-gE-MYk" secondAttribute="centerX" id="WpX-IW-uKZ"/>
+                        <constraint firstAttribute="bottom" secondItem="xAA-ch-RRc" secondAttribute="bottom" id="aiA-z6-pAL"/>
+                        <constraint firstAttribute="bottom" secondItem="VOr-od-e50" secondAttribute="bottom" constant="3" id="c0d-rS-i1p"/>
+                        <constraint firstAttribute="height" constant="50" id="gd2-0w-g9a"/>
+                        <constraint firstItem="0xE-6K-XCG" firstAttribute="leading" secondItem="VOr-od-e50" secondAttribute="trailing" constant="20" id="ozD-pr-XR4"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZPG-9X-wmb" userLabel="monthView">
+                    <rect key="frame" x="0.0" y="100" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9U-Ku-GH8" customClass="timeButton">
+                            <rect key="frame" x="20" y="0.0" width="335" height="50"/>
+                            <state key="normal" title="选择月份" image="line_Normal">
+                                <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <state key="selected" image="line_Selected">
+                                <color key="titleColor" red="0.078431372550000003" green="0.47058823529999999" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="selectTime_btnClick:" destination="-1" eventType="touchUpInside" id="5hq-A8-jIR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="a9U-Ku-GH8" secondAttribute="trailing" constant="20" id="ob2-wV-xAd"/>
+                        <constraint firstItem="a9U-Ku-GH8" firstAttribute="leading" secondItem="ZPG-9X-wmb" secondAttribute="leading" constant="20" id="ocR-HG-Nx2"/>
+                        <constraint firstItem="a9U-Ku-GH8" firstAttribute="top" secondItem="ZPG-9X-wmb" secondAttribute="top" id="rlS-NH-GBX"/>
+                        <constraint firstAttribute="bottom" secondItem="a9U-Ku-GH8" secondAttribute="bottom" id="s78-Zy-cpp"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5u-6T-HDJ">
+                    <rect key="frame" x="323" y="165" width="37" height="34"/>
+                    <state key="normal" title="清空">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="removeBtn_Click:" destination="-1" eventType="touchUpInside" id="eBz-vU-lsC"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="ZPG-9X-wmb" firstAttribute="trailing" secondItem="2Sv-gE-MYk" secondAttribute="trailing" id="DXa-14-3oI"/>
+                <constraint firstItem="MW0-qx-clp" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="GDt-fp-WgI"/>
+                <constraint firstItem="2Sv-gE-MYk" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="GbM-1l-g5C"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="E5u-6T-HDJ" secondAttribute="trailing" constant="15" id="Jgj-yk-TCH"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="2Sv-gE-MYk" secondAttribute="trailing" id="NM1-kO-Emw"/>
+                <constraint firstItem="2Sv-gE-MYk" firstAttribute="top" secondItem="MW0-qx-clp" secondAttribute="bottom" constant="25" id="fWk-4j-Co0"/>
+                <constraint firstItem="ZPG-9X-wmb" firstAttribute="top" secondItem="2Sv-gE-MYk" secondAttribute="top" id="hBd-SH-XRj"/>
+                <constraint firstItem="E5u-6T-HDJ" firstAttribute="top" secondItem="2Sv-gE-MYk" secondAttribute="bottom" constant="15" id="jr6-zg-vTb"/>
+                <constraint firstItem="ZPG-9X-wmb" firstAttribute="leading" secondItem="2Sv-gE-MYk" secondAttribute="leading" id="ruo-aE-GPr"/>
+                <constraint firstItem="MW0-qx-clp" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="30" id="uUJ-r7-MK1"/>
+                <constraint firstItem="ZPG-9X-wmb" firstAttribute="bottom" secondItem="2Sv-gE-MYk" secondAttribute="bottom" id="uh5-GQ-1Ul"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="31.5" y="124.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="line_Normal" width="147" height="1"/>
+        <image name="line_Selected" width="147" height="1"/>
+    </resources>
+</document>

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		193E50A22122AB0C001647B8 /* HooDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 193E50A02122AB0C001647B8 /* HooDatePicker.m */; };
+		193E50A32122AB0C001647B8 /* NSDate+HooDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 193E50A12122AB0C001647B8 /* NSDate+HooDatePicker.m */; };
+		193E50A62122B80B001647B8 /* timeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 193E50A52122B80B001647B8 /* timeButton.m */; };
 		1965B76021085015007416B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1965B75F21085015007416B7 /* AppDelegate.m */; };
 		1965B76321085015007416B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1965B76221085015007416B7 /* ViewController.m */; };
 		1965B76621085015007416B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1965B76421085015007416B7 /* Main.storyboard */; };
@@ -15,6 +18,10 @@
 		1965B76E21085016007416B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1965B76D21085016007416B7 /* main.m */; };
 		1965B77821085016007416B7 /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1965B77721085016007416B7 /* __Tests.m */; };
 		1965B78321085016007416B7 /* __UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1965B78221085016007416B7 /* __UITests.m */; };
+		1965B793210850BC007416B7 /* DatePickVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1965B791210850BC007416B7 /* DatePickVC.m */; };
+		1965B794210850BC007416B7 /* DatePickVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1965B792210850BC007416B7 /* DatePickVC.xib */; };
+		1965B79721085AE7007416B7 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1965B79621085AE7007416B7 /* UIImage+Extension.m */; };
+		C46A8C4535E1C2F324ECCC5B /* libPods-二货.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2198C9ADC28DAE41615FF8 /* libPods-二货.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		193E509E2122AB0C001647B8 /* HooDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HooDatePicker.h; sourceTree = "<group>"; };
+		193E509F2122AB0C001647B8 /* NSDate+HooDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+HooDatePicker.h"; sourceTree = "<group>"; };
+		193E50A02122AB0C001647B8 /* HooDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HooDatePicker.m; sourceTree = "<group>"; };
+		193E50A12122AB0C001647B8 /* NSDate+HooDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HooDatePicker.m"; sourceTree = "<group>"; };
+		193E50A42122B80B001647B8 /* timeButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = timeButton.h; sourceTree = "<group>"; };
+		193E50A52122B80B001647B8 /* timeButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = timeButton.m; sourceTree = "<group>"; };
 		1965B75B21085015007416B7 /* 二货.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "二货.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1965B75E21085015007416B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1965B75F21085015007416B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +64,14 @@
 		1965B77E21085016007416B7 /* 二货UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "二货UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1965B78221085016007416B7 /* __UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __UITests.m; sourceTree = "<group>"; };
 		1965B78421085016007416B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1965B790210850BC007416B7 /* DatePickVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatePickVC.h; sourceTree = "<group>"; };
+		1965B791210850BC007416B7 /* DatePickVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatePickVC.m; sourceTree = "<group>"; };
+		1965B792210850BC007416B7 /* DatePickVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickVC.xib; sourceTree = "<group>"; };
+		1965B79521085AE7007416B7 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		1965B79621085AE7007416B7 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		B5192B0CF11347B20B2BC7A3 /* Pods-二货.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-二货.debug.xcconfig"; path = "Pods/Target Support Files/Pods-二货/Pods-二货.debug.xcconfig"; sourceTree = "<group>"; };
+		BF2198C9ADC28DAE41615FF8 /* libPods-二货.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-二货.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA82C76F609587FBE4AF28CD /* Pods-二货.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-二货.release.xcconfig"; path = "Pods/Target Support Files/Pods-二货/Pods-二货.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C46A8C4535E1C2F324ECCC5B /* libPods-二货.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +100,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C99F8A84BB6472002959DF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF2198C9ADC28DAE41615FF8 /* libPods-二货.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		193E509D2122AB0C001647B8 /* HooDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				193E509E2122AB0C001647B8 /* HooDatePicker.h */,
+				193E50A02122AB0C001647B8 /* HooDatePicker.m */,
+				193E509F2122AB0C001647B8 /* NSDate+HooDatePicker.h */,
+				193E50A12122AB0C001647B8 /* NSDate+HooDatePicker.m */,
+			);
+			path = HooDatePicker;
+			sourceTree = "<group>";
+		};
 		1965B75221085015007416B7 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +126,8 @@
 				1965B77621085016007416B7 /* 二货Tests */,
 				1965B78121085016007416B7 /* 二货UITests */,
 				1965B75C21085015007416B7 /* Products */,
+				80A338BA4B29BA1FC5FED492 /* Pods */,
+				0C99F8A84BB6472002959DF0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +144,9 @@
 		1965B75D21085015007416B7 /* 二货 */ = {
 			isa = PBXGroup;
 			children = (
+				193E509D2122AB0C001647B8 /* HooDatePicker */,
+				1965B79521085AE7007416B7 /* UIImage+Extension.h */,
+				1965B79621085AE7007416B7 /* UIImage+Extension.m */,
 				1965B75E21085015007416B7 /* AppDelegate.h */,
 				1965B75F21085015007416B7 /* AppDelegate.m */,
 				1965B76121085015007416B7 /* ViewController.h */,
@@ -110,6 +156,11 @@
 				1965B76921085016007416B7 /* LaunchScreen.storyboard */,
 				1965B76C21085016007416B7 /* Info.plist */,
 				1965B76D21085016007416B7 /* main.m */,
+				1965B790210850BC007416B7 /* DatePickVC.h */,
+				1965B791210850BC007416B7 /* DatePickVC.m */,
+				1965B792210850BC007416B7 /* DatePickVC.xib */,
+				193E50A42122B80B001647B8 /* timeButton.h */,
+				193E50A52122B80B001647B8 /* timeButton.m */,
 			);
 			path = "二货";
 			sourceTree = "<group>";
@@ -132,6 +183,15 @@
 			path = "二货UITests";
 			sourceTree = "<group>";
 		};
+		80A338BA4B29BA1FC5FED492 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5192B0CF11347B20B2BC7A3 /* Pods-二货.debug.xcconfig */,
+				EA82C76F609587FBE4AF28CD /* Pods-二货.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +199,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1965B78721085016007416B7 /* Build configuration list for PBXNativeTarget "二货" */;
 			buildPhases = (
+				8DF4DAF1BA43D0F440B94355 /* [CP] Check Pods Manifest.lock */,
 				1965B75721085015007416B7 /* Sources */,
 				1965B75821085015007416B7 /* Frameworks */,
 				1965B75921085015007416B7 /* Resources */,
+				8C121E65AF630A2765AAFF01 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1965B76B21085016007416B7 /* LaunchScreen.storyboard in Resources */,
+				1965B794210850BC007416B7 /* DatePickVC.xib in Resources */,
 				1965B76821085016007416B7 /* Assets.xcassets in Resources */,
 				1965B76621085015007416B7 /* Main.storyboard in Resources */,
 			);
@@ -257,13 +320,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8C121E65AF630A2765AAFF01 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-二货/Pods-二货-resources.sh",
+				"${PODS_ROOT}/BRPickerView/BRPickerView/AddressPickerView/BRPickerView.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BRPickerView.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-二货/Pods-二货-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DF4DAF1BA43D0F440B94355 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-二货-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1965B75721085015007416B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				193E50A32122AB0C001647B8 /* NSDate+HooDatePicker.m in Sources */,
+				1965B79721085AE7007416B7 /* UIImage+Extension.m in Sources */,
+				193E50A62122B80B001647B8 /* timeButton.m in Sources */,
 				1965B76321085015007416B7 /* ViewController.m in Sources */,
+				1965B793210850BC007416B7 /* DatePickVC.m in Sources */,
 				1965B76E21085016007416B7 /* main.m in Sources */,
+				193E50A22122AB0C001647B8 /* HooDatePicker.m in Sources */,
 				1965B76021085015007416B7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,10 +538,13 @@
 		};
 		1965B78821085016007416B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5192B0CF11347B20B2BC7A3 /* Pods-二货.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54D9NVKPBR;
 				INFOPLIST_FILE = "二货/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -447,10 +557,13 @@
 		};
 		1965B78921085016007416B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA82C76F609587FBE4AF28CD /* Pods-二货.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54D9NVKPBR;
 				INFOPLIST_FILE = "二货/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
